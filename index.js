@@ -21,7 +21,7 @@ canvasBot.on('text', function(msg){
 	console.log(msg);
     if (msg.text.toLowerCase().includes("willem")) {
         canvasBot.sendMessage(msg.chat.id, "Hoorde ik onze koning?");
-		canvasBot.sendAudio(msg.hatId, 'http:///stillewillem.mp3');
+		canvasBot.sendAudio(msg.hatId, 'https://canvasstudiobot.herokuapp.com/stillewillem.mp3');
     }
 
 });
