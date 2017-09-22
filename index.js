@@ -39,4 +39,8 @@ canvasBot.on('text', function(msg){
         canvasBot.sendSticker(msg.chat.id, './assets/dab.webp');
     }
 
+    if (msg.text.toLowerCase().includes("tik")) {
+        canvasBot.sendSticker(msg.chat.id, './assets/tik.webp');
+    }
+
 });
