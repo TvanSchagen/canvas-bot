@@ -33,7 +33,7 @@ canvasBot.on('text', function(msg){
 
     if (msg.text.toLowerCase().includes("kokosnoot") || msg.text.toLowerCase().includes("kokosnoten")) {
         canvasBot.sendMessage(msg.chat.id, "Kokosnoten zijn geen specerijen.");
-        canvasBot.sendMessage(msg.chat.id, "`G E K O L O N I S E E R D`");
+        canvasBot.sendMessage(msg.chat.id, "`G E K O L O N I S E E R D`", {"parse_mode":"Markdown"});
     }
 
     if (msg.text.toLowerCase().includes("nijs")) {
