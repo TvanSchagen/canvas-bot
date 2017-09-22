@@ -1,13 +1,15 @@
+// Require our node packages
 const TelegramBot = require('node-telegram-bot-api');
 const http = require('http');
 const finalhandler = require('finalhandler');
 const serveStatic = require('serve-static');
 const randomInt = require('random-int');
 
+// Initialise telegram-bot
 const canvasToken = '367658684:AAEG7HFK_raGDEkrIKNln5OrxDeulzUqGPs';
 const canvasBot = new TelegramBot(canvasToken, {polling: true});
 
-// Static file serving
+// Static file serving, /assets/
 var serve = serveStatic("./");
 var server = http.createServer(function(req, res) {
     var done = finalhandler(req, res);
@@ -17,10 +19,10 @@ server.listen(process.env.PORT || 80);
 
 
 
-// Bot
+// Bot procedures
 canvasBot.on('text', function(msg){
 
-	console.log(msg);
+    // Willem
     if (msg.text.toLowerCase().includes("willem")) {
         canvasBot.sendMessage(msg.chat.id, "Hoorde ik onze koning?");
 
@@ -31,19 +33,23 @@ canvasBot.on('text', function(msg){
         }
     }
 
+    // Kokosnoot
     if (msg.text.toLowerCase().includes("kokosnoot") || msg.text.toLowerCase().includes("kokosnoten")) {
         canvasBot.sendMessage(msg.chat.id, "Kokosnoten zijn geen specerijen.");
         canvasBot.sendMessage(msg.chat.id, "`G E K O L O N I S E E R D`", {"parse_mode":"Markdown"});
     }
 
+    // Ah, Nijs
     if (msg.text.toLowerCase().includes("nijs")) {
         canvasBot.sendSticker(msg.chat.id, './assets/nijs.webp');
     }
 
+    // Dab
     if (msg.text.toLowerCase().includes("dab")) {
         canvasBot.sendSticker(msg.chat.id, './assets/dab.webp');
     }
 
+    // Tik
     if (msg.text.toLowerCase().includes("tik")) {
         canvasBot.sendSticker(msg.chat.id, './assets/tik.webp');
     }

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
-  "author": "",
+  "author": "Willem de Zwijger",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4",
@@ -15,5 +15,8 @@
     "node-telegram-bot-api": "^0.28.0",
     "random-int": "^1.0.0",
     "serve-static": "^1.12.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
