@@ -22,12 +22,12 @@ canvasBot.on('text', function(msg){
 
 	console.log(msg);
     if (msg.text.toLowerCase().includes("willem")) {
-        canvasBot.sendMessage(msg.chat.id, "Hoorde ik onze konineeg?");
+        canvasBot.sendMessage(msg.chat.id, "Hoorde ik onze koning?");
 
         if(randomInt(1,2) === 1){
-            canvasBot.sendAudio(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/stillewillem.mp3');
+            canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/stillewillem.ogg');
         }else{
-            canvasBot.sendAudio(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/specerijen.mp3');
+            canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/specerijen.ogg');
         }
     }
 
