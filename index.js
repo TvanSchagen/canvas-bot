@@ -31,6 +31,11 @@ canvasBot.on('text', function(msg){
         }
     }
 
+    if (msg.text.toLowerCase().includes("kokosnoot") || msg.text.toLowerCase().includes("kokosnoten")) {
+        canvasBot.sendMessage(msg.chat.id, "Kokosnoten zijn geen specerijen.");
+        canvasBot.sendMessage(msg.chat.id, "`G E K O L O N I S E E R D`");
+    }
+
     if (msg.text.toLowerCase().includes("nijs")) {
         canvasBot.sendSticker(msg.chat.id, './assets/nijs.webp');
     }
