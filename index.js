@@ -32,7 +32,11 @@ canvasBot.on('text', function(msg){
     }
 
     if (msg.text.toLowerCase().includes("nijs")) {
-        canvasBot.sendSticker(msg.chat.id, './nijs.webp');
+        canvasBot.sendSticker(msg.chat.id, './assets/nijs.webp');
+    }
+
+    if (msg.text.toLowerCase().includes("dab")) {
+        canvasBot.sendSticker(msg.chat.id, './assets/dab.webp');
     }
 
 });
