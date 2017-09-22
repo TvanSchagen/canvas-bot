@@ -1,8 +1,8 @@
 const TelegramBot = require('node-telegram-bot-api');
-http = require('http');
-finalhandler = require('finalhandler');
-serveStatic = require('serve-static');
-randomInt = require('random-int');
+const http = require('http');
+const finalhandler = require('finalhandler');
+const serveStatic = require('serve-static');
+const randomInt = require('random-int');
 
 const canvasToken = '367658684:AAEG7HFK_raGDEkrIKNln5OrxDeulzUqGPs';
 const canvasBot = new TelegramBot(canvasToken, {polling: true});
@@ -13,7 +13,7 @@ var server = http.createServer(function(req, res) {
     var done = finalhandler(req, res);
     serve(req, res, done);
 });
-server.listen(80);
+server.listen(8080);
 
 
 
