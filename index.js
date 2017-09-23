@@ -51,7 +51,7 @@ canvasBot.on('text', function(msg){
     
     // Javascript
     if (msg.text.toLowerCase().includes("javascript")) {
-        canvasBot.sendMessage(msg.chat.id, "Javascript? Je bedoelt Emcascript.");
+        canvasBot.sendMessage(msg.chat.id, "Javascript? Je bedoelt ECMAScript.");
     }
     
     // PHP
