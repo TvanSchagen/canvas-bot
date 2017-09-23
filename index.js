@@ -98,6 +98,11 @@ canvasBot.on('text', function(msg){
     if (msg.text.toLowerCase().includes("canvas")) {
         canvasBot.sendMessage(msg.chat.id, 'Ja?');
     }
+	    
+	    // Tik
+    if (msg.text.toLowerCase().includes("nicki")) {
+        canvasBot.sendMessage(msg.chat.id, "`.nicki-minaj { ass-size: cover; }`", {"parse_mode":"Markdown"});
+    }
 
 
 });
