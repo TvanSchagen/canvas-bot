@@ -105,5 +105,11 @@ canvasBot.on('text', function(msg){
         canvasBot.sendMessage(msg.chat.id, "Nice try. ASS ASS  ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS");
     }
 
+    // Nicki
+    if (msg.text.toLowerCase().includes("moe")) {
+        canvasBot.sendMessage(msg.chat.id, "Ik ben moe en ga slapen, doei");
+        canvasBot.leaveChat(msg.chat.id);
+    }
+
 
 });
