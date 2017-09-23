@@ -48,6 +48,11 @@ canvasBot.on('text', function(msg){
     if (msg.text.toLowerCase().includes("dab")) {
         canvasBot.sendSticker(msg.chat.id, './assets/dab.webp');
     }
+    
+    // Dab
+    if (msg.text.toLowerCase().includes("javascript")) {
+        canvasBot.sendMessage(msg.chat.id, "Javascript? Je bedoelt Emcascript.");
+    }
 
     // Tik
     if (msg.text.toLowerCase().includes("tik")) {
