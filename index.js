@@ -73,7 +73,12 @@ canvasBot.on('text', function(msg){
     if (msg.text.toLowerCase().includes("schoten")) {
         canvasBot.sendMessage(msg.chat.id, "Op 10 juli 1584 werd Willem van Oranje met drie kogels om het leven gebracht door Balthasar Gerards. In de ogen van Gerards was Willem van Oranje een verrader omdat hij zich het lot aantrok van de protestanten die zich verzetten tegen de Spaanse overheersing van Nederland.");
     }
-    
+
+    // Trello
+    if (msg.text.toLowerCase().includes("trello")) {
+        canvasBot.sendMessage(msg.chat.id, "Trello? Wij gebruiken hier alleen het alomwetende Todoist! Schaamt u zich zeer diep!");
+    }
+
     // VUE
     if (msg.text.toLowerCase().includes("vue")) {
         canvasBot.sendMessage(msg.chat.id, "Vue? Volgensmij schrijf je Angular4 verkeerd.", {"parse_mode":"Markdown"});
