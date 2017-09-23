@@ -48,6 +48,11 @@ canvasBot.on('text', function(msg){
     if (msg.text.toLowerCase().includes("dab")) {
         canvasBot.sendSticker(msg.chat.id, './assets/dab.webp');
     }
+
+    // Het Houdt Niet Op Niet Vanzelf
+    if (msg.text.toLowerCase().includes("het houdt niet op")) {
+        canvasBot.sendMessage(msg.chat.id, "niet vanzelf");
+    }
     
     // Javascript
     if (msg.text.toLowerCase().includes("javascript")) {
