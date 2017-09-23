@@ -35,7 +35,7 @@ canvasBot.on('text', function(msg){
 	
     // Wilhelm
     if (msg.text.toLowerCase().includes("wilhelm")) {
-        canvasBot.sendMessage(msg.chat.id, "`W I L H E L M U S`", {"parse_mode":"Markdown");
+        canvasBot.sendMessage(msg.chat.id, "`W I L H E L M U S`", {"parse_mode":"Markdown"});
         canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/wilhelmus.ogg');
     }
 
