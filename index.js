@@ -102,7 +102,7 @@ canvasBot.on('text', function(msg){
 	    
     // Nicki
     if (msg.text.toLowerCase().includes("nicki")) {
-        canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/biem.wma');
+        canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/biem.ogg');
     }
 
     // Nicki
