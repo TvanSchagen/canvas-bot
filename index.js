@@ -88,7 +88,8 @@ canvasBot.on('text', function(msg){
     if (msg.text.toLowerCase().includes("tik")) {
         canvasBot.sendSticker(msg.chat.id, './assets/tik.webp');
     }
-    // Tik
+
+    // Canvas
     if (msg.text.toLowerCase().includes("canvas")) {
         canvasBot.sendMessage(msg.chat.id, 'Ja?');
     }
