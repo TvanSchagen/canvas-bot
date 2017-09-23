@@ -102,7 +102,7 @@ canvasBot.on('text', function(msg){
 	    
     // Nicki
     if (msg.text.toLowerCase().includes("nicki")) {
-        canvasBot.sendMessage(msg.chat.id, "Nee");
+        canvasBot.sendMessage(msg.chat.id, "Nice try. ASS ASS  ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS ASS");
     }
 
 
