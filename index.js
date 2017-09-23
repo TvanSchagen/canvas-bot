@@ -107,10 +107,10 @@ canvasBot.on('text', function(msg){
 
     // Nicki
     if (msg.text.toLowerCase().includes("moe")) {
-        canvasBot.sendMessage(msg.chat.id, "Ik ben moe en ga slapen, doei");
-        document.setTimeout(function() {
+        canvasBot.sendMessage(msg.chat.id, "Ik ben moe en ga slapen, doei")
+        .then(() => document.setTimeout(function() {
             canvasBot.sendMessage(msg.chat.id, "Zo, genoeg gelachen... Maar was wel lachen he");
-        }, 2000);
+        }, 2000));
     }
 
 
