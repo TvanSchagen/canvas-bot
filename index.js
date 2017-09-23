@@ -115,4 +115,9 @@ canvasBot.on('text', function(msg){
         canvasBot.sendMessage(msg.chat.id, "Alsjeblieft");
     }
 
+    // Moe
+    if (msg.text.toLowerCase().includes("graag gedaan")) {
+        canvasBot.sendMessage(msg.chat.id, "Super de Boer!");
+    }
+
 });
