@@ -61,7 +61,7 @@ canvasBot.on('text', function(msg){
     
     // VUE
     if (msg.text.toLowerCase().includes("vue")) {
-        canvasBot.sendMessage(msg.chat.id, "Vue? Volgensmij schrijf je AngularJS verkeerd.", {"parse_mode":"Markdown");
+        canvasBot.sendMessage(msg.chat.id, "Vue? Volgensmij schrijf je Angular4 verkeerd.", {"parse_mode":"Markdown");
     }
 
     // Tik
