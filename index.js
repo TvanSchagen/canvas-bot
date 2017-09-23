@@ -102,7 +102,11 @@ canvasBot.on('text', function(msg){
 	    
     // Nicki
     if (msg.text.toLowerCase().includes("nicki")) {
-        canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/biem.mp3');
+        if(randomInt(1,3) === 1){
+            canvasBot.sendMessage(msg.chat.id, "`.nicki-minaj { ass-size: cover; }`", {"parse_mode":"Markdown"});
+        }else{
+            canvasBot.sendMessage(msg.chat.id, "_Mijn anaconda niet wil niets als je geen bolletjes hebt, honing!_",{"parse_mode":"Markdown"});
+        }
     }
 
     // Moe
