@@ -22,6 +22,8 @@ server.listen(process.env.PORT || 80);
 // Bot procedures
 canvasBot.on('text', function(msg){
 
+    console.log(msg);
+
     // Willem
     if (msg.text.toLowerCase().includes("willem")) {
         canvasBot.sendMessage(msg.chat.id, "Hoorde ik onze koning?");
@@ -98,6 +100,11 @@ canvasBot.on('text', function(msg){
     // Canvas
     if (msg.text.toLowerCase().includes("canvas")) {
         canvasBot.sendMessage(msg.chat.id, 'Ja?');
+    }
+
+    // Canvas
+    if (msg.text.toLowerCase().includes("0")) {
+        canvasBot.sendMessage(msg.chat.id, msg.text.replace(/e/g, '0').replace(/o/g, '0'));
     }
 	    
     // Nicki
