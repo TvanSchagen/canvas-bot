@@ -32,6 +32,12 @@ canvasBot.on('text', function(msg){
             canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/specerijen.ogg');
         }
     }
+	
+    // Wilhelm
+    if (msg.text.toLowerCase().includes("wilhelm")) {
+        canvasBot.sendMessage(msg.chat.id, "`W I L H E L M U S`", {"parse_mode":"Markdown");
+        canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/wilhelmus.ogg');
+    }
 
     // Kokosnoot
     if (msg.text.toLowerCase().includes("kokosnoot") || msg.text.toLowerCase().includes("kokosnoten")) {
