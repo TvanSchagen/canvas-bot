@@ -102,7 +102,7 @@ canvasBot.on('text', function(msg){
 	    
     // Nicki
     if (msg.text.toLowerCase().includes("nicki")) {
-        canvasBot.sendMessage(msg.chat.id, "`.nicki-minaj { ass-size: cover; }`", {"parse_mode":"Markdown"});
+        canvasBot.sendMessage(msg.chat.id, "Nee");
     }
 
 
