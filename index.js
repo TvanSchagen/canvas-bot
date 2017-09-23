@@ -63,6 +63,11 @@ canvasBot.on('text', function(msg){
     if (msg.text.toLowerCase().includes("php")) {
         canvasBot.sendMessage(msg.chat.id, "Brr, praat me niet van die rottaal. `php` ", {"parse_mode":"Markdown"});
     }
+
+    // Laravel
+    if (msg.text.toLowerCase().includes("laravel")) {
+        canvasBot.sendMessage(msg.chat.id, "Laravel, het nieuwe, hotte framework voor mensen die te incompetent zijn om JavaScript te leren!.", {"parse_mode":"Markdown"});
+    }
     
     // VUE
     if (msg.text.toLowerCase().includes("vue")) {
