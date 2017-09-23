@@ -105,10 +105,14 @@ canvasBot.on('text', function(msg){
         canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/biem.mp3');
     }
 
-    // Nicki
+    // Moe
     if (msg.text.toLowerCase().includes("moe")) {
         canvasBot.sendMessage(msg.chat.id, "Ik word hier zo moe van hè");
     }
 
+    // Moe
+    if (msg.text.toLowerCase().includes("dankjewel")) {
+        canvasBot.sendMessage(msg.chat.id, "Alsjeblieft");
+    }
 
 });
