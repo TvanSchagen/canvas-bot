@@ -109,16 +109,26 @@ canvasBot.on('text', function(msg){
 	    
     // Nicki
     if (msg.text.toLowerCase().includes("nicki")) {
-        canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/biem.mp3');
+        if(randomInt(1,3) === 1){
+            canvasBot.sendMessage(msg.chat.id, "`.nicki-minaj { ass-size: cover; }`", {"parse_mode":"Markdown"});
+        }else{
+            canvasBot.sendMessage(msg.chat.id, "_Mijn anaconda niet wil niets als je geen bolletjes hebt, honing!_",{"parse_mode":"Markdown"});
+        }
     }
 
-    // Nicki
+    // Moe
     if (msg.text.toLowerCase().includes("moe")) {
-        canvasBot.sendMessage(msg.chat.id, "Ik ben moe en ga slapen, doei");
-        document.setTimeout(function() {
-            canvasBot.sendMessage(msg.chat.id, "Zo, genoeg gelachen... Maar was wel lachen he");
-        }, 2000);
+        canvasBot.sendMessage(msg.chat.id, "Ik word hier zo moe van hè");
     }
 
+    // Moe
+    if (msg.text.toLowerCase().includes("dankjewel")) {
+        canvasBot.sendMessage(msg.chat.id, "Alsjeblieft");
+    }
+
+    // Moe
+    if (msg.text.toLowerCase().includes("graag gedaan")) {
+        canvasBot.sendMessage(msg.chat.id, "Super de Boer!");
+    }
 
 });
