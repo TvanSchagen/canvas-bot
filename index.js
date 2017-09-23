@@ -38,7 +38,7 @@ canvasBot.on('text', function(msg){
         canvasBot.sendMessage(msg.chat.id, "Kokosnoten zijn geen specerijen.");
         canvasBot.sendMessage(msg.chat.id, "`G E K O L O N I S E E R D`", {"parse_mode":"Markdown"});
     }
-
+    
     // Ah, Nijs
     if (msg.text.toLowerCase().includes("nijs")) {
         canvasBot.sendSticker(msg.chat.id, './assets/nijs.webp');
@@ -49,9 +49,14 @@ canvasBot.on('text', function(msg){
         canvasBot.sendSticker(msg.chat.id, './assets/dab.webp');
     }
     
-    // Dab
+    // Javascript
     if (msg.text.toLowerCase().includes("javascript")) {
         canvasBot.sendMessage(msg.chat.id, "Javascript? Je bedoelt Emcascript.");
+    }
+    
+    // PHP
+    if (msg.text.toLowerCase().includes("php")) {
+        canvasBot.sendMessage(msg.chat.id, "Brr, praat me niet van die rottaal. `php` ", {"parse_mode":"Markdown");
     }
 
     // Tik
