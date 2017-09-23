@@ -56,12 +56,12 @@ canvasBot.on('text', function(msg){
     
     // PHP
     if (msg.text.toLowerCase().includes("php")) {
-        canvasBot.sendMessage(msg.chat.id, "Brr, praat me niet van die rottaal. `php` ", {"parse_mode":"Markdown");
+        canvasBot.sendMessage(msg.chat.id, "Brr, praat me niet van die rottaal. `php` ", {"parse_mode":"Markdown"});
     }
     
     // VUE
     if (msg.text.toLowerCase().includes("vue")) {
-        canvasBot.sendMessage(msg.chat.id, "Vue? Volgensmij schrijf je Angular4 verkeerd.", {"parse_mode":"Markdown");
+        canvasBot.sendMessage(msg.chat.id, "Vue? Volgensmij schrijf je Angular4 verkeerd.", {"parse_mode":"Markdown"});
     }
 
     // Tik
