@@ -27,16 +27,16 @@ canvasBot.on('text', function(msg){
         canvasBot.sendMessage(msg.chat.id, "Hoorde ik onze koning?");
 
         if(randomInt(1,2) === 1){
-            canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/stillewillem.ogg');
+            canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/stillewillem.ogg');
         }else{
-            canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/specerijen.ogg');
+            canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/specerijen.ogg');
         }
     }
 	
     // Wilhelm
     if (msg.text.toLowerCase().includes("wilhelm")) {
         canvasBot.sendMessage(msg.chat.id, "`W I L H E L M U S`", {"parse_mode":"Markdown"});
-        canvasBot.sendVoice(msg.chat.id, 'http://canvasstudiobot.herokuapp.com/assets/wilhelmus.ogg');
+        canvasBot.sendVoice(msg.chat.id, 'http://canvasstudio-telegrambot.herokuapp.com/assets/wilhelmus.ogg');
     }
 
     // Kokosnoot
