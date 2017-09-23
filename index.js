@@ -107,7 +107,10 @@ canvasBot.on('text', function(msg){
 
     // Nicki
     if (msg.text.toLowerCase().includes("moe")) {
-        canvasBot.sendMessage(msg.chat.id, "Moe zijn is voor poesjes.");
+        canvasBot.sendMessage(msg.chat.id, "Ik ben moe en ga slapen, doei");
+        canvasBot.setTimeout(() => {
+            canvasBot.sendMessage(msg.chat.id, "Haha goeie grap, maar was wel lachen he");
+        }, 2000);
     }
 
 
